@@ -15,7 +15,7 @@ from telegram.ext import (
 )
 
 # ─── Налаштування ───────────────────────────────────────────────────────────
-TOKEN = "8846252745:AAG31dgh_fRLS1JPM2pTY7_TaqYDPm9Fipg"  # Замінити на свій токен
+TOKEN = os.environ.get("TOKEN", "8846252745:AAG31dgh_fRLS1JPM2pTY7_TaqYDPm9Fipg")
 DATA_FILE = "sales.json"
 
 logging.basicConfig(
